@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.scss"/>
+    <title>TP - 11 - FINAL</title>
+</head>
+<body>
+    <h1>Données des groupes</h1>
+
+    <!--SPECIFICATIONS FOR TRIAGE-->
+    <div class="searchSpecs" id="specsContainer">
+        <select name="sortType" id="selectContainer">
+            <option value="random">Triage Aléatoire</option>
+            <option value="sortedByLevel">Triage pondéré (Niveau)</option>
+        </select>
+        <input type="text" class="nbGroups" id="nbGroups" value="0" placeholder="0">
+    </div>
+
+    <!--BUTTONS FOR MANAGING CANDIDATES-->
+    <div class="candidates" id="candidate">
+        <div class="candidatesManaging">
+            <h2>Participants</h2>
+            <button id="add" type="button">Ajouter un participant</button>
+            <button id="generate" type="button">Générer les groupes</button>
+            <!--<button id="test" type="button">Console.Log</button>-->
+        </div>
+        <div id="allPersons"></div>
+    </div>
+
+    <!--DISPLAY FOR GROUPS-->
+    <div class="groups" id="group"></div>
+
+    <!--SCRIPTS JS-->
+    <script src="js/main.js"></script>
+</body>
+</html>
